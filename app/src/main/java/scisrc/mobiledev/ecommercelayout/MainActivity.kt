@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         binding.navView.setNavigationItemSelectedListener { menuItem ->
             val fragment: Fragment = when (menuItem.itemId) {
                 R.id.nav_home -> HomeFragment()
-                R.id.nav_cart ->cart()
+                R.id.nav_cart -> FragmentCart()
                 R.id.nav_favorites -> favorites()
                 R.id.nav_profile -> profile()
                 else -> HomeFragment()
